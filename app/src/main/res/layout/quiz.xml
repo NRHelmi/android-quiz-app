@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/quiz8">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:text="Quiz Application"
+        android:background="#55000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Wait ..."
+        android:textColor="#FFFFFF"
+        android:id="@+id/question"
+        android:layout_weight="0.36"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/next"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wait ..."
+            android:textColor="#FFFFFF"
+            android:buttonTint="@color/colorPrimary"
+            android:id="@+id/radioButton1"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wait ..."
+            android:buttonTint="@color/colorPrimary"
+            android:id="@+id/radioButton2"
+            android:textColor="#FFFFFF"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wait ..."
+            android:buttonTint="@color/colorPrimary"
+            android:id="@+id/radioButton3"
+            android:textColor="#FFFFFF"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        android:id="@+id/next"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:layout_weight="0.12"
+        android:onClick="playNext"
+        android:layout_marginBottom="121dp"
+        android:layout_above="@+id/actionbarT"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <android.support.v7.widget.Toolbar  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/actionbarT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#55000000"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/Base.Theme.AppCompat.CompactMenu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="footer">
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>
